@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+.PublicHomePage .main_view {
+    background-color: white;
+    margin-top: 80px;
+}
+
+.PublicHomePage .main_view .container{
+    width: 80%;
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.PublicHomePage .right_main{
+    width: 60%;
+    display: flex;
+    max-height: calc(100vh - 150px);
+}
+
+.PublicHomePage .right_main img{
+    width: 100%;
+    object-fit: contain;
+    opacity: .9;
+    padding-top: 1px;
+}
+
+.PublicHomePage .left_main{
+    align-self: center;
+    width: 40%;
+    text-align: left;
+}
+
+.PublicHomePage .landingLinks{
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+
+.PublicHomePage .left_main h1{
+    text-align: start;
+    font-size: 4rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: #08aae1;
+}
+
+.PublicHomePage .left_main h1 span{
+    color :#082949;
+}
+
+
+.PublicHomePage #promo{
+    max-width: 400px;
+    opacity: .8;
+    line-height: 22px;
+    /* border: solid red; */
+}
+
+.PublicHomePage #promo a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+.PublicHomePage #promo a:hover{
+    transform: scale(.98);
+}
+
+
+.PublicHomePage .landingLinks a{
+    color: white;
+    text-decoration: none;
+    background-color: #08aae1;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.PublicHomePage .landingLinks a:last-child{
+    background-color: rgba(8, 170, 225, .2);
+    color: #08aae1;
+}
+
+.PublicHomePage .landingLinks a:hover{
+    background-color: #082949;
+    color: white;
+}
+
+@media screen and (max-width: 1330px) {
+    .PublicHomePage .main_view .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .PublicHomePage .left_main h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .PublicHomePage .left_main h1{
+        font-size: 3rem;
+    }
+
+    .PublicHomePage #promo{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .PublicHomePage .left_main h1{
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .PublicHomePage .main_view .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .PublicHomePage .right_main{
+        width: 60%;
+    }
+    .PublicHomePage .left_main{
+        width: 80%;
+    }
+    .PublicHomePage #promo{
+        max-width: 800px;
+        width: 100%;
+    }
+    .PublicHomePage .left_main h1{
+        text-align: center;
+    }
+    .PublicHomePage .landingLinks{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .PublicHomePage .left_main{
+        width: 95%;
+    }
+    .PublicHomePage .right_main{
+        width: 80%;
+    }
+}

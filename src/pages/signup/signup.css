@@ -1,0 +1,183 @@
+.signupAndLoginPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.signupAndLoginPage .goBack{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.signupAndLoginPage .goBack img{
+    width: 60px;
+}
+
+
+.signupAndLoginPage .container{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding-block: 40px 60px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.signupAndLoginPage .errorMessage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 15px;
+    background-color: #b5001c;
+    color: white;
+    padding: 5px;
+}
+
+.signupAndLoginPage .container .left,
+.signupAndLoginPage .container .right{
+    width: 50%;
+}
+
+.signupAndLoginPage .container .left img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.signupAndLoginPage .inputBox input{
+	font-family: 'Poppins', sans-serif;
+    color: rgb(71, 71, 71);
+    border: none;
+    outline: none;
+    border-bottom: solid 2px rgba(0, 0, 0, .5);
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding-left: 23px;
+}
+
+.signupAndLoginPage .inputBox{
+    position: relative;
+    width: 100%;
+    margin-block: 30px;
+}
+
+.signupAndLoginPage .inputBox span{
+    color: rgb(126, 125, 125);
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transition: .5s;
+    padding-left: 23px;
+}
+
+.signupAndLoginPage .inputBox i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(71, 71, 71);
+}
+
+.signupAndLoginPage .inputBox input:focus ~ span,
+.signupAndLoginPage .inputBox input:valid ~ span{
+    transform: translateY(-20px);
+    font-size: .7rem;
+    background-color: #7774e6;
+    color: white;
+    padding-inline: 5px;
+}
+
+.signupAndLoginPage .right input[type="submit"]{
+    background-color: #7774e6;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: white;
+    width: fit-content;
+    display: block;
+    border: none;
+    font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.signupAndLoginPage .right input[type="submit"]:hover{
+    background-color: #524de4;
+}
+
+.signupAndLoginPage #remMe{
+    margin-right: 5px;
+}
+
+.signupAndLoginPage .haveAnAccount{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+
+    .signupAndLoginPage .container .left{
+        display: none;
+    }
+    .signupAndLoginPage .container .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .signupAndLoginPage .inputBox input{
+        width: 100%;
+    }
+    .signupAndLoginPage .errorMessage{
+        font-size: .8rem;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    .signupAndLoginPage .container{
+        width: 80%;
+    }
+    .signupAndLoginPage .goBack{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 350px){
+    .signupAndLoginPage .container{
+        width: 90%;
+    }
+    .signupAndLoginPage .container .right{
+        width: 85%;
+    }
+    .signupAndLoginPage .haveAnAccount{
+        font-size: .8rem;
+    }
+}

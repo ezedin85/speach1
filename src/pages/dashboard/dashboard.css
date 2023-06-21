@@ -1,0 +1,146 @@
+.dashboardPage{
+    padding-block: 30px;
+    width: 85%;
+    max-width: 900px;
+}
+
+.dashboardPage .update{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 20px 30px 0px;
+    padding: 10px 20px;    
+    background-color: white;
+}
+
+.dashboardPage .update .left{
+    width: 74%;
+}
+
+.dashboardPage .update a{
+    display: inline-block;
+    outline: none;
+    border-radius: 3px;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+    background: rgb(0, 101, 255);
+    padding: 8px 17px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    min-width: 110px;
+}
+
+.dashboardPage .update a:hover {
+    background: rgb(0, 82, 204);
+    transition-duration: 0s, 0.15s;
+}
+
+.dashboardPage .update .examLink {
+    margin-right: 20px;
+    background: linear-gradient(to left, rgba(150,4,31,1) , rgba(191,4,38,1) );
+}
+
+.dashboardPage .update .examLink:hover{
+    background: linear-gradient(to left, rgba(191,4,38,1), rgba(150,4,31,1) );
+    transition-duration: 0s, 0.15s;
+}
+
+.dashboardPage .update .right{
+    width: 25%;
+}
+
+.dashboardPage .update .right img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.dashboardPage .activity .container{
+    background-color: white;
+    padding: 20px 30px;
+    margin: 10px 20px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.dashboardPage .activity .box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboardPage .activity .box i{
+    font-size: 1.5rem;
+    color: #3275b7;
+}
+
+@media screen and (max-width: 1130px) {
+    .dashboardPage .activity .box{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .dashboardPage{
+        padding-block: 10px;
+    }
+    .dashboardPage .activity .container{
+        padding: 20px 10px;
+    }
+
+    .dashboardPage .update{
+        margin-block: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboardPage .update p{
+        font-size: .9rem;
+    }
+    .dashboardPage .update{
+        padding-inline: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dashboardPage .update{
+        flex-direction: column-reverse;
+    }
+    .dashboardPage .update .left{
+        width: 100%;
+    }
+    .dashboardPage .update .right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .dashboardPage .update{
+        margin-block: 5px 10px;
+    }
+    .dashboardPage>h1{
+        font-size: 1.6rem;
+    }
+    .dashboardPage .update .left>h2{
+        font-size: 1.3rem;
+    }
+    .dashboardPage .activity .container{
+        margin-block: 0 10px;   
+    }
+    .dashboardPage .activity .box{
+        width: 100%;
+    }
+    .dashboardPage .update a{
+        padding-inline: 8px;
+        min-width: 90px;
+    }
+    .dashboardPage .update .examLink {
+        margin-right: 10px;
+    }
+}

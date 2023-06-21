@@ -1,0 +1,79 @@
+.footerComp{
+    background-color: black;
+    color: white;
+}
+
+.footerComp .container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerComp .container>div{
+    width: 23%;
+}
+
+
+.footerComp .container .logo{
+    max-width: 150px;
+}
+
+.footerComp .container a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-block: 3px;
+}
+
+.footerComp .container a:hover{
+    scale: .98;
+    opacity: .8;
+}
+.footerComp .container div:nth-child(4) a{
+    color: yellow;
+    display: inline-block;
+}
+
+
+.footerComp .info{
+    text-align: center;
+    padding-block: 10px;
+    background-color: rgb(31, 31, 31);
+}
+
+.footerComp .info a{
+    text-decoration: none;
+    color: yellow;
+    display: inline-block;
+}
+
+.footerComp .info a:hover{
+    transform: scale(.98);
+}
+
+
+@media screen and (max-width: 950px) {
+    .footerComp .container{
+        width: 90%;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .footerComp .container>div{
+        width: 48%;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .footerComp .container{
+        flex-direction: column;
+    }
+    .footerComp .container>div{
+        width: 100%;
+        text-align: center;
+    }
+    .footerComp .info{
+        font-size: .9rem;
+    }
+}

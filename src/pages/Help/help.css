@@ -1,0 +1,61 @@
+.helpPage{
+    margin-top: 80px;
+    background-color: white;
+}
+
+.helpPage .container{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1px;
+    min-height: 100vh;
+
+}
+.helpPage .container>h1{
+    margin-block: 50px 30px;
+    color: #1a95a4;
+}
+
+.helpPage .questionContainer{
+    border: solid 1px rgb(206, 206, 206);
+    margin-block: 4px;
+    color: rgb(53, 53, 53);
+    font-size: 1.2rem;
+}
+.helpPage .questionContainer .question{
+    padding: 20px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.helpPage .questionContainer .question:hover{
+    color: orangered;
+}
+
+.helpPage .question i{
+    color: orangered;
+    border: solid 1px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.helpPage .questionContainer .answer{
+    font-weight: 500;
+    overflow: hidden;
+    transition: .2s;
+    animation: ansAnim 2s;
+}
+
+
+.helpPage .answer span{
+    border-top: rgba(255, 68, 0, .4) 3px solid;
+    min-width: 100%;
+    display: inline-block;
+    padding: 30px 20px 30px;
+}
+

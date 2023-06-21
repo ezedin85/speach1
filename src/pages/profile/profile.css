@@ -1,0 +1,134 @@
+.profilePage{
+    width: 100%;
+}
+
+.profilePage .container{
+    position: relative;
+    width: 95%;
+    max-width: 700px;
+    margin-top: 50px;
+    padding-block: 40px 60px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(196, 153, 153, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: .3s;
+}
+
+
+.profilePage .errorMessage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 15px;
+    background-color: #b5001c;
+    color: white;
+    padding: 5px;
+}
+
+.profilePage .container .left,
+.profilePage .container .right{
+    width: 50%;
+}
+
+.profilePage .container .left img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.profilePage .right input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 90%;
+    border-bottom: 1px solid #eee;
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    color: grey;
+  }
+
+.profilePage .right input[type="submit"]{
+    background-color: rgb(0, 101, 255);
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: white;
+    width: fit-content;
+    display: block;
+    border: none;
+    font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.profilePage .right input[type="submit"]:hover{
+    background-color: rgb(0, 82, 204);
+}
+
+.profilePage #remMe{
+    margin-right: 5px;
+}
+
+.profilePage .haveAnAccount{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .profilePage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 80px);
+    }
+    .profilePage .container{
+        padding-block: 20px;
+        margin: 2px 15px 2px 0;
+        flex-direction: column;
+        width: 96%;
+        border-radius: 0;
+    }
+    
+    .profilePage .container:hover{
+        border-radius: 0;
+    }
+
+    .profilePage .container .right{
+        width: 90%;
+    }
+    /* .profilePage .container .right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .profilePage .inputBox input{
+        width: 100%;
+    }
+    .profilePage .errorMessage{
+        font-size: .8rem;
+    } */
+}
+
+/* @media screen and (max-width: 350px){
+    .profilePage .container{
+        width: 90%;
+    }
+    .profilePage .container .right{
+        width: 85%;
+    }
+    .profilePage .haveAnAccount{
+        font-size: .8rem;
+    }
+} */
+

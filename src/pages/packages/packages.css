@@ -1,0 +1,115 @@
+.packagesPage{
+    padding-block: 40px;
+    margin-top: 80px;
+}
+
+.packagesPage .title{
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 30px;
+    text-transform: uppercase;
+    color: royalblue;
+}
+
+.packagesPage .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.packagesPage .pack{
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .4s;
+}
+
+.packagesPage .pack:hover{
+    transform: scale(1.05);
+}
+
+.packagesPage h1{
+    color: royalblue;
+}
+
+.packagesPage .amh{
+    font-size: .8rem;
+    padding-left: 1.5em;
+    color: royalblue;
+    margin-bottom: 1em;
+}
+
+.packagesPage .detail div>i{
+    color: royalblue;
+    margin-right: 3px;
+}
+
+.packagesPage .plan_detail{
+    display: block;
+    text-decoration: none;
+    font-size: .8rem;
+    text-align: right;
+    margin: 1.3em;
+    color: royalblue;
+}
+
+.packagesPage .reg{
+    display: block;
+    text-align: center;
+    background-color: royalblue;
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.packagesPage .reg:hover{
+    background-color: rgb(32, 84, 240);
+}
+
+.packagesPage .forHover{
+    position: absolute;
+    right: -100%;
+    bottom: -40px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(119, 116, 230, .3);
+    transition: .2s;
+    z-index: -2;
+}
+
+.packagesPage .pack:hover .forHover{
+    border-radius: 280px;
+    right: -20px;
+}
+
+@media screen and (max-width: 700px) {
+    .packagesPage .container{
+        width: 95%;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .packagesPage{
+        padding-block: 20px;
+    }
+
+    .packagesPage .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .packagesPage .title{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 400px) {}

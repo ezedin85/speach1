@@ -1,0 +1,27 @@
+.contactPage{
+    width: 95%;
+    height: calc(100vh - 80px);
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 1040px) {
+    .contactPage .contactForm .container{
+        width: 90%;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+    .contactPage .contactForm .right{
+        display: none;
+    }
+}
+@media screen and (max-width: 390px) {
+    .contactPage{
+        padding: 0;
+        padding-right: 15px;
+    }
+}

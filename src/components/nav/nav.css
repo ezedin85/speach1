@@ -1,0 +1,176 @@
+.navPage{
+    position: fixed;
+    width : 100%;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    z-index: 3;
+    background-color: rgba(255, 255, 255,.95);
+    backdrop-filter: blur(5px);
+}
+
+.navPage .container{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navPage .logo{
+    text-decoration: none;
+    color: #167f88;
+    font-size: .8rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+.navPage .logo img{
+    width: 55px;
+    padding-top: 2px;
+}
+
+
+.navPage  .navLinks{
+    display: flex;
+    gap: 30px;
+}
+
+.navPage .navLinks a,
+.navPage .navLinks span{
+    text-decoration: none;
+    color: #a05858;
+    padding: 0 5px;
+    border-bottom: 2px transparent solid;
+    letter-spacing: .5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navPage .navLinks span::after,
+.navPage .navLinks a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(to right,#ff6704, #e31d77);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .4s;
+    transform: scale(0);
+}
+
+.navPage .navLinks span:hover::after,
+.navPage .navLinks a:hover::after{
+    transform: scale(1);
+}
+
+.navPage .navLinks .active{
+    font-weight: bold;
+    color: #0065ff;
+}
+.navPage .menuBar{
+    display: none;
+    cursor: pointer;
+}
+
+.navPage .menuBar span{
+    width: 28px;
+    height: 2px;
+    display: block;
+    background-color: rgb(217,27,87);
+}
+
+/* .darkMode{
+    width: 45px;
+    height: 20px;
+    border: solid 1px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.darkModeBall{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+} */
+
+
+
+
+@media screen and (max-width: 960px) {
+    .navPage .logo img{
+        width: 45px;
+    }
+
+    .navPage .container{
+        width: 90%;
+    }
+    .navPage .navLinks{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        font-size: 1.5rem;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+    }
+
+    .navPage .navLinks a:first-of-type{
+        margin-top: 50px;
+    }
+
+    .navPage .closeNavMenu{
+        display: block;
+        position: absolute;
+        right: 10vw;
+        top: 10vh;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    .navPage .menuBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .navPage .line1, .line3{
+        transform: rotate(0);
+        transition: .5s;
+    }
+
+    .navPage .closeBar .line2{
+        visibility: hidden;
+    }
+
+    .navPage .closeBar .line1{
+        transform: rotate(405deg);
+        transform-origin:left;
+    }
+
+    .navPage .closeBar .line3{
+        transform: rotate(-405deg);
+        transform-origin:left;
+    }
+
+    .navPage .showLinks{
+        height: 100vh;
+    }
+    
+    /* .fixedNav{
+        background-color: rgba(255, 255, 255,.95);
+        position: fixed;
+    } */
+}

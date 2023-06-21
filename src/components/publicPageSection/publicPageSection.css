@@ -1,0 +1,131 @@
+.PublicPageSectionComp{
+    padding-block: 100px 50px;
+    background-color: rgb(248, 248, 248);
+}
+
+.PublicPageSectionComp .whoWeAre .container,
+.PublicPageSectionComp .boxes .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.PublicPageSectionComp .boxes .box{
+    min-width: 220px;
+    background-color: #0b163f;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.PublicPageSectionComp .box h1{
+    color: #f3ca3d;
+    font-size: 3rem;
+}
+
+.PublicPageSectionComp .whoWeAre .container{
+    width: 80%;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.PublicPageSectionComp .whoWeAre .left{
+    width: 20%;
+}
+
+.PublicPageSectionComp .whoWeAre .left img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.PublicPageSectionComp .whoWeAre .right{
+    width: 70%;
+}
+
+.PublicPageSectionComp .whoWeAre .right h2{
+    line-height: 1.8rem;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 1360px) {
+    .PublicPageSectionComp .boxes .container{
+        gap: 50px;
+        padding-inline: 30px;
+    }
+    .PublicPageSectionComp .boxes .box{
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .PublicPageSectionComp .boxes .container{
+        gap: 30px;
+        padding-inline: 0;
+    }
+    .PublicPageSectionComp .boxes .box{
+        min-width: 220px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .PublicPageSectionComp .whoWeAre .container{
+        width: 90%;
+        gap: 30px;
+    }
+
+    .PublicPageSectionComp .whoWeAre .right h2{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .PublicPageSectionComp .whoWeAre .right p{
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+    .PublicPageSectionComp .whoWeAre .right{
+        /* width: 75%; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .PublicPageSectionComp{
+        padding-block: 50px 20px;
+    }
+    .PublicPageSectionComp .boxes .container{
+        gap: 20px;
+    }
+    .PublicPageSectionComp .boxes .box{
+        min-width: 180px;
+    }
+    .PublicPageSectionComp .box h1{
+        font-size: 2rem;
+    }
+    .PublicPageSectionComp .box h2{
+        font-size: 1.2rem;
+    }
+    .PublicPageSectionComp .whoWeAre .container{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 0;
+    }
+    .PublicPageSectionComp .whoWeAre .left{
+        width: fit-content;
+    }
+    .PublicPageSectionComp .whoWeAre .left img{
+        max-width: 100px;
+    }
+    .PublicPageSectionComp .whoWeAre .right{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+    .PublicPageSectionComp .boxes .box{
+        min-width: 80%;
+    }
+}

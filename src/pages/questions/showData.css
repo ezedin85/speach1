@@ -1,0 +1,123 @@
+.showDataPage{
+    margin: 30px 20px 30px 0px;
+}
+
+.showDataPage .options{
+    display: flex;
+    justify-content: space-between;
+}
+
+.showDataPage .showDataTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.showDataPage .showDataTable td,
+.showDataPage .showDataTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #847d9a;
+}
+
+.showDataPage .showDataTable tr:nth-child(even){background-color: #f2f2f2;}
+.showDataPage .showDataTable tr:hover {background-color: white;}
+
+.showDataPage .showDataTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #167f88;
+    background-color: white;
+}
+
+.showDataPage .btn{
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    transition: background 0.1s ease-out 0s,;
+    background: rgb(0, 101, 255);
+    padding: 6px 0px;
+    margin-block: 3px;
+    margin-inline: 1px;
+    color: rgb(255, 255, 255);
+    min-width: 55px;
+    transition-duration: 0s, 0.15s;
+}
+
+.showDataPage .btn:hover{
+    opacity: .9;
+}
+
+.showDataPage .deleteBtn{
+    background: linear-gradient(to left, rgba(150,4,31,1) , rgba(191,4,38,1) );
+}
+
+.showDataPage .updateBtn:hover {
+    background: rgb(0, 82, 204);
+}
+
+.showDataPage .deleteBtn:hover{
+    background: linear-gradient(to left, rgba(191,4,38,1), rgba(150,4,31,1) );
+}
+
+.showDataPage .filterBtn{
+    background-color: mediumseagreen;
+    margin-inline: 5px;
+}
+
+.showDataPage .pageBtn{
+    margin-inline: 5px;
+    background-color: #167f88;
+}
+
+.showDataPage .deleteModal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.showDataPage .delPopup{
+    z-index: 4;
+    position: fixed;
+    padding: 30px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.showDataPage .delPopup div{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.showDataPage .cancelBtn,
+.showDataPage .trashBtn{
+    border: none;
+    padding: 2px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    background-color: #2b80ec;
+    margin: 3px;
+    padding-block: 5px ;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+}
+
+.showDataPage .trashBtn{
+    background-color: #f5365c;    
+}
+
+.showDataPage .trashBtn:hover,
+.showDataPage .cancelBtn:hover{
+    opacity: .9;
+}
